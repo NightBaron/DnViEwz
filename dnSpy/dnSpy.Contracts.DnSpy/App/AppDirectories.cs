@@ -1,5 +1,5 @@
-/*
-    Copyright (C) 2014-2019 de4dot@gmail.com
+﻿/*
+    Copyright (C) 2014-2018 de4dot@gmail.com
 
     This file is part of dnSpy
 
@@ -27,7 +27,7 @@ namespace dnSpy.Contracts.App {
 	/// Application directories
 	/// </summary>
 	public static class AppDirectories {
-		const string DNSPY_SETTINGS_FILENAME = "dnSpy.xml";
+		const string DNSPY_SETTINGS_FILENAME = "DnViEwz.xml";
 
 		/// <summary>
 		/// Base directory of dnSpy binaries
@@ -61,7 +61,7 @@ namespace dnSpy.Contracts.App {
 			if (File.Exists(settingsFilename))
 				DataDirectory = BinDirectory;
 			else {
-				DataDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "dnSpy");
+				DataDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "DnViEwz");
 				settingsFilename = Path.Combine(DataDirectory, DNSPY_SETTINGS_FILENAME);
 			}
 		}
