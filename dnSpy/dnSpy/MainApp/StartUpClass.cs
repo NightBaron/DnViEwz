@@ -1,5 +1,5 @@
-/*
-    Copyright (C) 2014-2019 de4dot@gmail.com
+﻿/*
+    Copyright (C) 2014-2018 de4dot@gmail.com
 
     This file is part of dnSpy
 
@@ -37,10 +37,10 @@ namespace dnSpy.MainApp {
 			// Use multicore JIT.
 			// Simple test: x86: ~18% faster startup, x64: ~12% faster startup.
 			try {
-				var profileDir = BGJitUtils.GetFolder();
+				var profileDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), Constants.DnSpyFile, "Startup");
 				Directory.CreateDirectory(profileDir);
 				ProfileOptimization.SetProfileRoot(profileDir);
-				ProfileOptimization.StartProfile("startup.profile");
+				ProfileOptimization.StartProfile($"startup-{IntPtr.Size * 8}.profile");
 			}
 			catch {
 			}

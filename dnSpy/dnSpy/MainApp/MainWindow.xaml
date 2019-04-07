@@ -1,5 +1,5 @@
-<!--
-    Copyright (C) 2014-2019 de4dot@gmail.com
+﻿<!--
+    Copyright (C) 2014-2018 de4dot@gmail.com
 
     This file is part of dnSpy
 
@@ -25,9 +25,9 @@
         xmlns:ds="clr-namespace:dnSpy.MainApp"
         Style="{StaticResource MainWindowStyle}"
         SystemMenuImage="{x:Static img:DsImages.Assembly}"
-        Title="{x:Static ds:Constants.DnSpy}"
+        Title="DnViEwz"
         MinWidth="250"
         MinHeight="200"
-        Height="600" Width="1000">
+        Height="600" Width="1000" WindowState="Maximized">
     <ContentPresenter Name="contentPresenter" />
 </ctrls:MetroWindow>
